@@ -28,7 +28,8 @@ namespace Utilities
             
             option.AddArgument("--headless");
             //option.AddArgument("start-maximized");
-            option.AddArgument("--window-size=1920,1080");
+            option.AddArguments("--window-size=1920x1080","--disable-gpu");
+             options.AddUserProfilePreference("Downloads",Directory.GetCurrentDirectory());
 
             option.UnhandledPromptBehavior = UnhandledPromptBehavior.Accept;
             option.AcceptInsecureCertificates = true;
